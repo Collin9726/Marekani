@@ -4,4 +4,5 @@ from . import main
 @main.route('/')
 @main.route('/home')
 def index():
-    return render_template('index.html')
+    title="Marekani-Home"
+    return render_template('index.html', title=title)
