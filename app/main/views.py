@@ -13,7 +13,7 @@ def index():
     politico=news_from_source("politico")
     cbs=news_from_source("cbs-news")
 
-    abc=news_from_source("abc-news")
+    newsweek=news_from_source("newsweek")
     fox=news_from_source("fox-news")
     time=news_from_source("time")
     nbc=news_from_source("nbc-news")
@@ -22,7 +22,7 @@ def index():
 
     sources=get_sources()
     title="Marekani"
-    return render_template('index.html', title=title, breaking_news=top_news, cnn=cnn, bbc=bbc, al=aljazeera,usa_today=usa_today, politico=politico, cbs=cbs, sources=sources, abc=abc, fox=fox, time=time, nbc=nbc, reuters=reuters, msnbc=msnbc)
+    return render_template('index.html', title=title, breaking_news=top_news, cnn=cnn, bbc=bbc, al=aljazeera,usa_today=usa_today, politico=politico, cbs=cbs, sources=sources, newsweek=newsweek, fox=fox, time=time, nbc=nbc, reuters=reuters, msnbc=msnbc)
 
 
 @main.route('/source/<id>')
@@ -30,4 +30,4 @@ def news_source(id):
     news_list=news_from_source(id)
     title=news_list[0].source_name
     sources=get_sources()
-    return render_template('news_source.html', title=title, news_list=news_list, sources=sources)
+    return render_template('news_list.html', title=title, news_list=news_list, sources=sources)
