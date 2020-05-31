@@ -1,11 +1,11 @@
 from flask import render_template, request, redirect, url_for
 from . import main
-from ..requests import get_breaking_news,news_from_source,get_sources
+from ..requests import get_news,news_from_source,get_sources
 
 @main.route('/')
 @main.route('/home')
 def index():
-    breaking_news=get_breaking_news()
+    top_news=get_news()
     cnn=news_from_source("cnn")
     bbc=news_from_source("bbc-news")
     aljazeera=news_from_source("al-jazeera-english")
@@ -22,7 +22,7 @@ def index():
 
     sources=get_sources()
     title="Marekani"
-    return render_template('index.html', title=title, breaking_news=breaking_news, cnn=cnn, bbc=bbc, al=aljazeera,usa_today=usa_today, politico=politico, cbs=cbs, sources=sources, abc=abc, fox=fox, time=time, nbc=nbc, reuters=reuters, msnbc=msnbc)
+    return render_template('index.html', title=title, breaking_news=top_news, cnn=cnn, bbc=bbc, al=aljazeera,usa_today=usa_today, politico=politico, cbs=cbs, sources=sources, abc=abc, fox=fox, time=time, nbc=nbc, reuters=reuters, msnbc=msnbc)
 
 
 @main.route('/source/<id>')
