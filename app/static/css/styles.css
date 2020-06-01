@@ -28,7 +28,7 @@ a :hover{
 .brand h1{     
     color: black;
     font-family: hothamFont;
-    font-size: 5em;    
+    font-size: 4em;    
 }
 
 .date p{    
@@ -175,7 +175,7 @@ label{
 }
 
 .carousel-inner img{
-    max-height: 350px; 
+    max-height: 35vh; 
     object-fit: cover;     
 }
 
@@ -184,7 +184,7 @@ label{
 }
 
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1250px) {
     .brand h1{      
         font-size: 3em;    
     }
