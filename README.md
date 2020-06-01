@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/1f6e5d4b-412a-47b2-bd89-30f07056cae9)](https://codebeat.co/projects/github-com-collin9726-marekani-master)
+
 # Marekani
 #### An news app that allows users to preview and browse news articles from around the world, 01/06/2020
 #### By [Collin Owino](https://github.com/Collin9726)
