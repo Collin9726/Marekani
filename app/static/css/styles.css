@@ -184,7 +184,7 @@ label{
 }
 
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1350px) {
     .brand h1{      
         font-size: 3em;    
     }
@@ -194,7 +194,7 @@ label{
     }
 
     .carousel-inner img{
-        max-height: 30vh;
+        max-height: 22vh;
         object-fit: cover;    
     }
 
@@ -222,9 +222,3 @@ label{
     }   
 }
 
-@media screen and (max-width: 1400px) {
-    .carousel-inner img{
-        max-height: 22vh;
-        object-fit: cover;    
-    }
-}
