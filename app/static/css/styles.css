@@ -175,9 +175,56 @@ label{
 }
 
 .carousel-inner img{
-    max-height: 350px;    
+    max-height: 350px; 
+    object-fit: cover;     
 }
 
 .item img {
     width:100%
+}
+
+
+@media screen and (max-width: 1400px) {
+    .brand h1{      
+        font-size: 3em;    
+    }
+
+    .lists p{
+        line-height: 1em;
+    }
+
+    .carousel-inner img{
+        max-height: 30vh;
+        object-fit: cover;    
+    }
+
+    .carousel-caption p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand h1{      
+        font-size: 5em;    
+    }
+
+    .lists p{
+        line-height: 0.8em;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .card-img-top {
+        width: 100%;
+        height: 120px; 
+        object-fit: cover;   
+    }   
+}
+
+@media screen and (max-width: 1400px) {
+    .carousel-inner img{
+        max-height: 22vh;
+        object-fit: cover;    
+    }
 }
