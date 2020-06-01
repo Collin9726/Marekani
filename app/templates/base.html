@@ -18,6 +18,17 @@
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 {% endblock %}
 
+{% block title%}
+    {{ super() }}    
+
+    {% if title %}
+        
+    {% else %}
+        Marekani News
+    {% endif %}
+    
+
+{% endblock %}
 
 
 
