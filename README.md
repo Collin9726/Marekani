@@ -3,6 +3,13 @@
 # Marekani
 #### An news app that allows users to preview and browse news articles from around the world, 01/06/2020
 #### By [Collin Owino](https://github.com/Collin9726)
+
+### [Marekani App](https://marekaninews.herokuapp.com/)
+
+<img src="./app/static/images/MarekaniNews.png"
+     alt="Marekani home image"
+     style="width=100%;" />
+
 ## Description
 
 <table>
