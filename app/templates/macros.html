@@ -28,3 +28,31 @@
 {% endfor %}  
 
 {% endmacro %}
+
+
+
+{% macro displayCarousel(breaking_list) %}    
+
+{% for breaking_news in breaking_list %}
+
+{% if breaking_news.title==breaking_list[0].title %}
+
+{% else %}
+
+<div class="item">
+  <img src="{{breaking_news.url_to_image}}" alt="..." onerror="imgError(this);">
+  <div class="carousel-caption">
+      <p><a href="{{breaking_news.url}}" target="_blank">{{breaking_news.title}}</a></p>                                    
+  </div>
+</div>
+
+{% endif %}
+
+
+{% endfor %}  
+
+{% endmacro %}
+
+
+
+
